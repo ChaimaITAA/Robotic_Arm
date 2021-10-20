@@ -37,5 +37,7 @@ We load the URDF file into the setup wizard and start configuring it:
   * define robot poses.
   * define end effectors.
   * set-up ros controller.
-
+ after configiring the moveit setup assitant and setting up the code for the arm_position detection we can lunch Rviz to see how things are going.
 ![simulation](simulation.png)
+# Computer vision:
+to detect the color of the cubes that the robot is deling with we used a python code "colordetectionn.py" to deffirenciate blue and red.
