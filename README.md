@@ -12,7 +12,7 @@ I am also interested in the industrial context of this project, which offers us 
 I have opted for a design that allows us to 3D print the prototype in the right dimensions and
 the prototype in the right size and with the right function.
 For the mechanical design, I worked on SolidWorks, for the realization of the components as well as their assembly. 
-# Impression 3D
+# 3D print
 ![print](print.png)
 #  
 To do this, I export the parts to be printed separately in STL format. I used Slicer Ultimaker Cura, to prepare the printing. 
