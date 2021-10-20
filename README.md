@@ -28,7 +28,7 @@ joint transformations and appropriate axes.
 #  
 The next step is to export the URDF files from SolidWorks and use them to generate the
 URDF package using Moveit setup assistant.
-
+![moveit](moveit.PNG)
 
 We load the URDF file into the setup wizard and start configuring it:
   * Generate a self-collision. 
