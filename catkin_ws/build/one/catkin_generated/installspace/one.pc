@@ -1,0 +1,8 @@
+prefix=/home/chaima/catkin_ws/install
+
+Name: one
+Description: Description of one
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
