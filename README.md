@@ -23,4 +23,18 @@ The SolidWorks to URDF exporter is a SolidWorks add-on that allows the convenien
 parts and software assemblies into a URDF file. The exporter will create a package that contains a directory for meshes, textures and robots (URDF files). 
 For assemblies, the exporter will build the links and create a tree structure based on the SW assembly hierarchy. The exporter can automatically determine the joint type,
 joint transformations and appropriate axes.
+#  
+![urdf](urdf.PNG)
+#  
+The next step is to export the URDF files from SolidWorks and use them to generate the
+URDF package using Moveit setup assistant.
+
+We load the URDF file into the setup wizard and start configuring it:
+  * Generate a self-collision. 
+  * Define vitual joints.
+  * define a planning group.
+  * define robot poses.
+  * define end effectors.
+  * set-up ros controller.
+
 ![simulation](simulation.png)
