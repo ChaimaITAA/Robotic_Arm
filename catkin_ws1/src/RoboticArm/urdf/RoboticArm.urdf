@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="RoboticArm">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0407792536350643 0.0496052423301395 0.0928795656917679"
+        rpy="0 0 0" />
+      <mass
+        value="0.12604908910439" />
+      <inertia
+        ixx="0.000156906764758295"
+        ixy="2.76735589435069E-22"
+        ixz="1.29246970711408E-22"
+        iyy="0.000259260220876787"
+        iyz="3.55867639585126E-20"
+        izz="0.000156906764758295" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="plate">
+    <inertial>
+      <origin
+        xyz="-0.00348181803539307 0.013680039513843 -0.00110146162484924"
+        rpy="0 0 0" />
+      <mass
+        value="0.106607057301156" />
+      <inertia
+        ixx="8.49969642300164E-05"
+        ixy="7.31708330440521E-06"
+        ixz="-1.12161447330865E-06"
+        iyy="0.000105425752325564"
+        iyz="6.30418300717581E-06"
+        izz="7.44901951900708E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/plate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/plate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_to_plate"
+    type="fixed">
+    <origin
+      xyz="0.040778 -0.092881 0.086108"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="plate" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="arm1">
+    <inertial>
+      <origin
+        xyz="-0.000130107523910544 0.0585900554400583 0.00596879568554673"
+        rpy="0 0 0" />
+      <mass
+        value="0.0643926908975187" />
+      <inertia
+        ixx="0.000107038200205104"
+        ixy="-1.65200001443648E-09"
+        ixz="2.38582116318295E-10"
+        iyy="9.10999699360972E-06"
+        iyz="2.39606114370457E-07"
+        izz="0.000111844791293225" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/arm1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0.254901960784314 0.92156862745098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/arm1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="plate_to_arm1"
+    type="continuous">
+    <origin
+      xyz="0 0.040453 -0.013742"
+      rpy="1.5708 1.2748 1.5708" />
+    <parent
+      link="plate" />
+    <child
+      link="arm1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="arm2">
+    <inertial>
+      <origin
+        xyz="0.000277854090908025 0.0392852834270276 0.012408861309494"
+        rpy="0 0 0" />
+      <mass
+        value="0.050268290046773" />
+      <inertia
+        ixx="5.46008476659968E-05"
+        ixy="-6.95762442111047E-08"
+        ixz="-5.70482612350729E-11"
+        iyy="9.28678115786935E-06"
+        iyz="-2.8752316699574E-07"
+        izz="5.81489796492489E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/arm2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/arm2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm1_to_arm2"
+    type="continuous">
+    <origin
+      xyz="0 0.12 0"
+      rpy="3.1416 0 1.7476" />
+    <parent
+      link="arm1" />
+    <child
+      link="arm2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="littesupport">
+    <inertial>
+      <origin
+        xyz="0.00504606327647605 0.0330023541981623 -0.00526461247520499"
+        rpy="0 0 0" />
+      <mass
+        value="0.0164994591646359" />
+      <inertia
+        ixx="3.91221230465608E-06"
+        ixy="1.15010694662439E-08"
+        ixz="-3.99730134679921E-09"
+        iyy="2.61245500437581E-06"
+        iyz="5.75784785342775E-07"
+        izz="5.0223585156069E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/littesupport.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/littesupport.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="arm2_to_litte_support"
+    type="continuous">
+    <origin
+      xyz="-0.00505 0.076439 0.0125"
+      rpy="0 0.17623 0" />
+    <parent
+      link="arm2" />
+    <child
+      link="littesupport" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="littlesupport2">
+    <inertial>
+      <origin
+        xyz="-0.0133733891093217 0.00581676496775496 0.0235511327187966"
+        rpy="0 0 0" />
+      <mass
+        value="0.0157213996969813" />
+      <inertia
+        ixx="7.24744416899929E-06"
+        ixy="-3.50347180867032E-07"
+        ixz="-1.42854822214762E-06"
+        iyy="8.11576195233211E-06"
+        iyz="-1.36413025460123E-06"
+        izz="2.5604584481162E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/littlesupport2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/littlesupport2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="littlesupport_to_littlesupport2"
+    type="continuous">
+    <origin
+      xyz="0.005 0.043161 0"
+      rpy="-0.41033 -1.5708 0.08758" />
+    <parent
+      link="littesupport" />
+    <child
+      link="littlesupport2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="geerright">
+    <inertial>
+      <origin
+        xyz="-0.0501100983998741 0.0195 0.00284347811315948"
+        rpy="0 0 0" />
+      <mass
+        value="0.00256585966934386" />
+      <inertia
+        ixx="9.68714144297744E-08"
+        ixy="-5.62482816536059E-23"
+        ixz="4.46722226156503E-08"
+        iyy="4.46162551545417E-07"
+        iyz="-5.9557004103818E-23"
+        izz="3.56133429567227E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/geerright.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/geerright.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="littlesupport2_to_geerright"
+    type="continuous">
+    <origin
+      xyz="-0.0206 0 0"
+      rpy="3.1416 1.0844 3.1416" />
+    <parent
+      link="littlesupport2" />
+    <child
+      link="geerright" />
+    <axis
+      xyz="0.46742 0 -0.88403" />
+  </joint>
+  <link
+    name="grabberr1">
+    <inertial>
+      <origin
+        xyz="0.0132500225891743 0.0533645569241495 -0.0744786360385295"
+        rpy="0 0 0" />
+      <mass
+        value="0.00539747492540316" />
+      <inertia
+        ixx="1.7139173615087E-06"
+        ixy="1.25016368783866E-11"
+        ixz="6.52045109329271E-12"
+        iyy="1.59582906541738E-06"
+        iyz="3.73412274090843E-07"
+        izz="1.83082846319442E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberr1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberr1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="geerr_to_grabber"
+    type="continuous">
+    <origin
+      xyz="-0.0070176 0 0.013272"
+      rpy="0.67604 0 1.5708" />
+    <parent
+      link="geerright" />
+    <child
+      link="grabberr1" />
+    <axis
+      xyz="0 0.91776 0.39713" />
+  </joint>
+  <link
+    name="geerleft">
+    <inertial>
+      <origin
+        xyz="0.0474029973313519 0.0194999999999996 -0.00744274420445752"
+        rpy="0 0 0" />
+      <mass
+        value="0.00264161328462975" />
+      <inertia
+        ixx="9.00461116469698E-08"
+        ixy="5.62482816536059E-23"
+        ixz="-9.25740848878218E-09"
+        iyy="4.472396674933E-07"
+        iyz="6.61744490042422E-24"
+        izz="3.64237857938676E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/geerleft.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/geerleft.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="littlesupport2_to_geerleft"
+    type="continuous">
+    <origin
+      xyz="-0.0055866 0 0"
+      rpy="3.1416 -0.95002 3.1416" />
+    <parent
+      link="littlesupport2" />
+    <child
+      link="geerleft" />
+    <axis
+      xyz="0.58167 0 0.81343" />
+  </joint>
+  <link
+    name="grabberl1">
+    <inertial>
+      <origin
+        xyz="-0.0132499774170393 0.0584441281939657 -0.0731843213818451"
+        rpy="0 0 0" />
+      <mass
+        value="0.00539747241029236" />
+      <inertia
+        ixx="1.71391105519726E-06"
+        ixy="1.25534085234425E-11"
+        ixz="6.53217985819288E-12"
+        iyy="1.59582707278213E-06"
+        iyz="3.73412926182567E-07"
+        izz="1.83078515204332E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberl1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberl1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="geerleft_to_grabberl"
+    type="continuous">
+    <origin
+      xyz="0.0021927 0 0.0030663"
+      rpy="0.56951 0 -1.5708" />
+    <parent
+      link="geerleft" />
+    <child
+      link="grabberl1" />
+    <axis
+      xyz="0 0.92847 0.3714" />
+  </joint>
+  <link
+    name="suppright">
+    <inertial>
+      <origin
+        xyz="-0.0676291985647798 0.0195000000000004 -0.0267734029268266"
+        rpy="0 0 0" />
+      <mass
+        value="0.000798762413184688" />
+      <inertia
+        ixx="3.63250422363009E-09"
+        ixy="-4.1876018510497E-23"
+        ixz="-9.02660843448491E-23"
+        iyy="1.04424225659603E-07"
+        iyz="6.61744490042422E-24"
+        izz="1.02921754537799E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/suppright.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/suppright.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="suppright_to_grabber"
+    type="continuous">
+    <origin
+      xyz="-0.014733 0 0"
+      rpy="3.1416 0.9528 -3.1416" />
+    <parent
+      link="littlesupport2" />
+    <child
+      link="suppright" />
+    <axis
+      xyz="0.57941 0 -0.81504" />
+  </joint>
+  <link
+    name="grabberr2">
+    <inertial>
+      <origin
+        xyz="0.0132500225891743 0.0533645569241495 -0.0744786360385295"
+        rpy="0 0 0" />
+      <mass
+        value="0.00539747492540316" />
+      <inertia
+        ixx="1.7139173615087E-06"
+        ixy="1.25016368783899E-11"
+        ixz="6.5204510932497E-12"
+        iyy="1.59582906541738E-06"
+        iyz="3.73412274090843E-07"
+        izz="1.83082846319442E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberr2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberr2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sur_to_grabber"
+    type="continuous">
+    <origin
+      xyz="-0.0052992 0 0.0074543"
+      rpy="0.54441 0 1.5708" />
+    <parent
+      link="suppright" />
+    <child
+      link="grabberr2" />
+    <axis
+      xyz="0 0.91776 0.39713" />
+  </joint>
+  <link
+    name="suppleft">
+    <inertial>
+      <origin
+        xyz="-0.0654875920394475 -0.0195000000000002 -0.0297111609337834"
+        rpy="0 0 0" />
+      <mass
+        value="0.000798762413184692" />
+      <inertia
+        ixx="3.63250422363012E-09"
+        ixy="-9.0989867380833E-24"
+        ixz="5.46456192167844E-23"
+        iyy="1.04424225659604E-07"
+        iyz="0"
+        izz="1.02921754537799E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/suppleft.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/suppleft.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="suppleft_to_grabber"
+    type="continuous">
+    <origin
+      xyz="-0.012165 0 0"
+      rpy="-3.1416 0.9625 0" />
+    <parent
+      link="littlesupport2" />
+    <child
+      link="suppleft" />
+    <axis
+      xyz="0.57147 0 -0.82062" />
+  </joint>
+  <link
+    name="grabberl2">
+    <inertial>
+      <origin
+        xyz="-0.0132499774170393 0.0584441281939657 -0.0731843213818451"
+        rpy="0 0 0" />
+      <mass
+        value="0.00539747241029236" />
+      <inertia
+        ixx="1.71391105519726E-06"
+        ixy="1.25534085233366E-11"
+        ixz="6.53217985833516E-12"
+        iyy="1.59582707278213E-06"
+        iyz="3.73412926182567E-07"
+        izz="1.83078515204332E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberl2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberl2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sul_to_grabberl"
+    type="continuous">
+    <origin
+      xyz="0.0016052 0 -0.0023051"
+      rpy="0.58199 0 1.5708" />
+    <parent
+      link="suppleft" />
+    <child
+      link="grabberl2" />
+    <axis
+      xyz="0 0.92847 0.3714" />
+  </joint>
+  <link
+    name="supprightdown">
+    <inertial>
+      <origin
+        xyz="-0.0676291985647792 0.00700000000000012 -0.0267734029268272"
+        rpy="0 0 0" />
+      <mass
+        value="0.000798762413184691" />
+      <inertia
+        ixx="3.63250422363008E-09"
+        ixy="-2.85377311330795E-23"
+        ixz="-4.81884405600423E-22"
+        iyy="1.04424225659604E-07"
+        iyz="3.30872245021211E-24"
+        izz="1.02921754537799E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/supprightdown.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/supprightdown.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="supprightdown_to_grabber"
+    type="continuous">
+    <origin
+      xyz="-0.014733 0 0"
+      rpy="3.1416 0.9528 -3.1416" />
+    <parent
+      link="littlesupport2" />
+    <child
+      link="supprightdown" />
+    <axis
+      xyz="0.57941 0 -0.81504" />
+  </joint>
+  <link
+    name="grabberr3">
+    <inertial>
+      <origin
+        xyz="0.0132500225891743 0.0533645569241495 -0.0744786360385295"
+        rpy="0 0 0" />
+      <mass
+        value="0.00539747492540316" />
+      <inertia
+        ixx="1.7139173615087E-06"
+        ixy="1.25016368783866E-11"
+        ixz="6.52045109329271E-12"
+        iyy="1.59582906541738E-06"
+        iyz="3.73412274090843E-07"
+        izz="1.83082846319442E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberr3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberr3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sdr_to_grabber"
+    type="continuous">
+    <origin
+      xyz="-0.0052992 0 0.0074543"
+      rpy="0.54441 0 1.5708" />
+    <parent
+      link="supprightdown" />
+    <child
+      link="grabberr3" />
+    <axis
+      xyz="0 0.91776 0.39713" />
+  </joint>
+  <link
+    name="suppleftdown">
+    <inertial>
+      <origin
+        xyz="-0.0654875920394477 0.00700000000000045 0.0297111609337833"
+        rpy="0 0 0" />
+      <mass
+        value="0.00079876241318469" />
+      <inertia
+        ixx="3.63250422363011E-09"
+        ixy="1.62468612063072E-21"
+        ixz="-2.32075860609409E-22"
+        iyy="1.04424225659604E-07"
+        iyz="1.81979734761666E-23"
+        izz="1.02921754537799E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/suppleftdown.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/suppleftdown.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="suppleftdown_to_grabber"
+    type="continuous">
+    <origin
+      xyz="-0.012165 0 0"
+      rpy="0 0.9625 0" />
+    <parent
+      link="littlesupport2" />
+    <child
+      link="suppleftdown" />
+    <axis
+      xyz="0.57147 0 0.82062" />
+  </joint>
+  <link
+    name="grabberl3">
+    <inertial>
+      <origin
+        xyz="-0.0132499774170393 0.0584441281939657 -0.0731843213818451"
+        rpy="0 0 0" />
+      <mass
+        value="0.00539747241029236" />
+      <inertia
+        ixx="1.71391105519726E-06"
+        ixy="1.25534085233366E-11"
+        ixz="6.53217985833516E-12"
+        iyy="1.59582707278213E-06"
+        iyz="3.73412926182567E-07"
+        izz="1.83078515204332E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberl3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://RoboticArm/meshes/grabberl3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sdl_to_grabber"
+    type="continuous">
+    <origin
+      xyz="0.0016052 0 0.0023051"
+      rpy="-2.5596 0 -1.5708" />
+    <parent
+      link="suppleftdown" />
+    <child
+      link="grabberl3" />
+    <axis
+      xyz="0 0.92847 0.3714" />
+  </joint>
+</robot>

@@ -1,0 +1,8 @@
+prefix=/home/chaima/catkin_ws1/devel
+
+Name: RoboticArm
+Description: Description of RoboticArm
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

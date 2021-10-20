@@ -1,0 +1,2 @@
+RoboticArm:tuto
+-DCATKIN_DEVEL_PREFIX=/home/chaima/catkin_ws1/devel -DCMAKE_INSTALL_PREFIX=/home/chaima/catkin_ws1/install -G Unix Makefiles
