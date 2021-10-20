@@ -1,2 +1,0 @@
-beginner_tutorials:one:tutorial_one:tutorialone
--DCATKIN_DEVEL_PREFIX=/home/chaima/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/chaima/catkin_ws/install -G Unix Makefiles
