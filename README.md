@@ -1,5 +1,6 @@
 # Robotic_Arm
-![tri](tri.png)
+![tri](tri.png) 
+![arm](arm.PNG)
 # 
 As part of my end-of-year project, I chose to work on this theme,
 which we found quite interesting, as it offers us an excellent opportunity to
@@ -12,6 +13,6 @@ I have opted for a design that allows us to 3D print the prototype in the right 
 the prototype in the right size and with the right function.
 For the mechanical design, I worked on SolidWorks, for the realization of the components as well as their assembly. 
 #Impression 3D
-![print](print.Png)
+![print](print.png)
 #  
 ![simulation](simulation.png)
