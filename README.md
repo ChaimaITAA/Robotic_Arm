@@ -6,6 +6,18 @@ As part of my end-of-year project, I chose to work on this theme,
 which we found quite interesting, as it offers us an excellent opportunity to
 implement all the skills I have acquired up to this point in our training in robotics and mechatronics and image processing/industrial vision.
 I am also interested in the industrial context of this project, which offers us an opportunity to manipulate robots in their exact operating environments and to take all these conditions into account from the the design phase.
+# Theoretical study
+Kinematic modeling and establishing coordinates is a key point in order to harmonize the manipulator robot with its control device.
+Subsequently, the Denavit-Hartenberg (DH) design is carried out where homogeneous matrices of pairs
+Individual kinematics are used to define the transformation of the coordinate.
+The DH coordinate frames are shown in Fig. 2 which includes the provision of the
+joints, links and orientations of the manipulator.
+In the figure, the four segments of the manipulator are labeled I1, I2, I3, and I4 and their lengths are 16
+cm, 44 cm, 37 cm and 25 cm respectively.
+The arm includes five rotation joints which are labeled as J1, J2, J3, J4 and J5.
+These five joints work simultaneously to grip an object in a three-way workspace.
+dimensions and thus achieve an efficient grip.
+![axes](axes.PNG)
 # Mechanical design
 ![rob](rob.png)
 # 
