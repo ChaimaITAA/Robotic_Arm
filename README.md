@@ -17,6 +17,7 @@ cm, 44 cm, 37 cm and 25 cm respectively.
 The arm includes five rotation joints which are labeled as J1, J2, J3, J4 and J5.
 These five joints work simultaneously to grip an object in a three-way workspace.
 dimensions and thus achieve an efficient grip.
+#  
 ![axes](axes.PNG)
 #  
 ![tab](tab.PNG)
