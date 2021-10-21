@@ -35,6 +35,8 @@ Based on DH parameters, the transformation matrices are expressed as follows:
 #  
 Since the command, which the operator will introduce, depends directly on the angles 𝜃1, 𝜃2, 𝜃3, 𝜃4 and 𝜃5.
 We are interested in calculating them from the previous equations. We finally obtain :
+# 
+![res](res.PNG)
 
 # Mechanical design
 ![rob](rob.png)
