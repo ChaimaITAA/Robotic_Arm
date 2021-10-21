@@ -18,6 +18,23 @@ The arm includes five rotation joints which are labeled as J1, J2, J3, J4 and J5
 These five joints work simultaneously to grip an object in a three-way workspace.
 dimensions and thus achieve an efficient grip.
 ![axes](axes.PNG)
+#  
+![tab](tab.PNG)
+#  
+To analyze the inverse kinematics, the DH parameters are presented in Table 1.
+With :
+* 𝜽 is the necessary rotation of the Ri − 1 coordinate system around the Zi − 1 axis to obtain a coincidence
+between the Xi − 1 axis and the Xi axis.
+* d expresses the distance from the center of the Ri − 1 coordinate system to the center of the Ri − 1 coordinate system around the Zi − 1 axis
+* r indicates the distance between the center of the Ri − 1 coordinate system at the center of the Ri − 1 coordinate system around the Xi axis
+* α denotes the necessary rotation of the Ri − 1 coordinate system around the Xi axis to obtain a coincidence
+between the Zi − 1 axis and the Zi axis.
+Based on DH parameters, the transformation matrices are expressed as follows:
+![matr](matr.PNG)
+#  
+Since the command, which the operator will introduce, depends directly on the angles 𝜃1, 𝜃2, 𝜃3, 𝜃4 and 𝜃5.
+We are interested in calculating them from the previous equations. We finally obtain :
+
 # Mechanical design
 ![rob](rob.png)
 # 
